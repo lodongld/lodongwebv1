@@ -1,0 +1,461 @@
+@font-face {
+    font-family: 'leferi';
+    src: url('../fonts/LeferiBaseRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'load_apple';
+    src: url('../fonts/AppleSDGothicNeoB.ttf');
+
+
+}
+
+@font-face {
+    font-family: 'load_apple_kor';
+    src: url("../fonts/AppleSDGothicNeoL.ttf");
+
+}
+
+@font-face {
+    font-family: 'load_sb';
+    src: url("../fonts/AppleSDGothicNeoSB.ttf");
+
+}
+
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+
+}
+
+.container_first {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+
+}
+
+.top_bar {
+    width: 100%;
+    height: 674px;
+    position: relative;
+    background-image: url("../resources/golf_top.png");
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center;
+    background-color: #FFB800;
+}
+.top_bar3 {
+    width: 100%;
+    height: 674px;
+    position: relative;
+    background-image: url("../resources/career/careerbanner.svg");
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center;
+    background-color: #FFB800;
+}
+
+.text_container {
+    top: 208px;
+    left: -155px;
+    position: relative;
+    justify-content: center;
+    background-color: transparent;
+}
+
+
+.text1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    text-align: center;
+
+
+}
+
+.text2 {
+    color: white;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+    margin-top: 24px;
+
+
+}
+
+.text1 p {
+    text-align: center;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.text2 p {
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 46px;
+    font-family: "load_apple";
+    text-align: left;
+}
+
+.first_sentence {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    text-align: center;
+}
+
+.text_bottom {
+    display: flex;
+
+    left: -140px;
+
+
+    top: 433px;
+    position: relative;
+    justify-content: center;
+    background-color: transparent;
+}
+
+
+.text_bottom a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 38px;
+    font-family: "load_apple";
+
+}
+
+.text_bottom p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 38px;
+    font-family: "load_apple_kor";
+
+}
+
+.second_sentence {
+    margin-left: 33px;
+    color: white;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+}
+
+.second_sentence a {
+    background-color: transparent;
+    text-align: center;
+}
+
+.second_sentence p {
+    background-color: transparent;
+    text-align: center;
+    margin-left: 15px;
+}
+
+
+.first_sentence a {
+    text-align: center;
+
+}
+
+.first_sentence p {
+    margin-left: 20px;
+    background-color: transparent;
+    text-align: center;
+
+}
+
+
+.detail_container {
+    position: relative;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    color: #000000;
+    margin: auto;
+    font-family: load_apple;
+    justify-content: center;
+    text-align: left;
+}
+
+.detail_first {
+    margin-top: 225px;
+    left: -220px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.detail_second {
+    margin-top: 225px;
+    margin-right: 670px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.detail_second p {
+    position: relative;
+    text-align: left;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+}
+
+
+.detail_third {
+    margin-top: 225px;
+    left: -220px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.third_text {
+    position: relative;
+    left: 0;
+
+
+}
+
+.third_text p {
+    margin-top: 200px;
+    padding-bottom: 67px;
+}
+
+.third_text a {
+    margin: auto;
+    font-family: load_apple_kor;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.third_image {
+    position: relative;
+    display: flex;
+}
+
+
+.first {
+    position: absolute;
+    overflow: visible;
+    margin: 50px 100px 100px 20px;
+    max-width: 765px;
+    max-height: 808px;
+
+}
+
+.second {
+    position: absolute;
+    margin-left: 96px;
+    margin-top: 153px;
+}
+
+.gray_circle {
+    position: absolute;
+    margin-top: 132px;
+    margin-left: 211px;
+}
+
+
+.detail_forth {
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+/* .forth_img {
+    position: relative;
+    max-height: 1200px;
+    max-width: 817px;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+
+
+} */
+
+.forth_text2 {
+    position: relative;
+    display: flex;
+    font-family: load_apple_kor;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    justify-content: center;
+}
+
+
+.forth_img2 {
+    position: relative;
+    margin-top: 750px;
+    border: solid 1px;
+}
+
+.forth_img2 h1 {
+    max-height: 102px;
+    max-width: 303px;
+
+    height: 102px;
+    width: 303px;
+
+    position: relative;
+    font-family: load_apple;
+    color: black;
+    text-align: left;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+
+
+    justify-content: center;
+
+    display: flex;
+    margin: 1500px auto auto 3150px;
+}
+
+/* .forth_img3 {
+    position: relative;
+    margin-top: 750px;
+
+} */
+
+.break {
+    position: relative;
+    margin-top: 600px;
+    margin-right: 758px;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.break a {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    position: relative;
+    margin: auto;
+}
+
+.fifth_text {
+    position: relative;
+    margin-left: 415px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 500px;
+
+}
+
+.fifth_text p {
+    position: relative;
+    margin-top: 382px;
+    width: max-content;
+
+    margin-bottom: 40px;
+}
+
+.fifth_text a {
+    position: relative;
+    margin-left: 0px;
+    display: inline-block;
+    font-family: load_apple_kor;
+
+}
+
+.detail_fifth {
+    position: relative;
+    display: flex;
+    right: 550px;
+    justify-content: center;
+}
+
+.fifth_img {
+    display: flex;
+    margin-left: 202px;
+
+}
+
+.fifth_img1 {
+    position: absolute;
+    z-index: 5;
+
+}
+
+.fifth_gray1 {
+    position: absolute;
+    margin-left: 410px;
+    margin-top: 145px;
+}
+
+.fifth_gray2 {
+    position: absolute;
+    margin-top: 421px;
+    margin-left: 185px;
+}
+
+.detail_sixth {
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.sixth_text {
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 100px;
+}
+
+.detail_sixth a {
+
+    font-family: load_apple_kor;
+    text-align: center;
+
+}
+
+.bottom_icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 200px 0px;
+
+    cursor: pointer;
+}
+
+.section-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-cont img {
+    display: block;
+    margin: auto;
+    width: 60vw;
+}
+.detail_first p, h3{
+    display: block;
+}

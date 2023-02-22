@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>로동 = 실패없는 개발</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+            name="description"
+            content="Software Company for Android, IOS, Web, Softwares, AI"
+    />
+    <meta
+            name="keywords"
+            content="HTML, CSS, JavaScript, Android, Kotlin, IOS, Swift, Java, Python, IT, IT Development, Developer, Web Developer, Native Mobile Developer, Mobile Developer, Programming, Software, Software Company, Lodong, Korea, Jobs, Careers"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel=" stylesheet "
+            href=" https://unpkg.com/@kfonts/nexon-lv1-gothic/index.css "
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/service.css"/>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"
+            type="text/javascript"></script>
+
+
+    <script src="js/service_moving.js"></script>
+    <script src="js/service.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+
+</head>
+<body onmousemove="mouse_position(event)">
+
+<header>
+
+    <div id="container_header" class="container_header">
+
+        <div class="navbar">
+            <a href="service.html">SERVICE</a>
+            <a href="#">TEAM</a>
+            <a href="#">APPROACH</a>
+            <a href="#">CAREERS</a>
+        </div>
+        <div class="logo">
+            <a href="index.html"><h1>LODONG</h1></a>
+        </div>
+        <div class="dropdown">
+            <div id="dropdown_contrainer_service" class="dropdown_contrainer_service">
+
+                <div class="dropdown_service">
+                    <span>Dev</span>
+
+                    <img class="span_v" id="span_v" src="./resources/spinner.svg"></img>
+
+                    <div class="dropdown-content-services">
+                        <a href="#">개발</a>
+                        <a href="#">디자인</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="dropdown_contrainer_language" class="dropdown_contrainer_language">
+                <div class="dropdown_language">
+                    <span>KOR</span>
+                    <img class="span_v_lan" id="span_v_lan" src="./resources/spinner.svg"></img>
+
+                    <div class="dropdown-content">
+                        <a href="#">KOR</a>
+                        <a href="#">ENG</a>
+                    </div>
+                </div>
+                <div class="dropbtn">
+                </div>
+            </div>
+            <div class="ask">
+                <button class="orderbtn" onClick="location.href='inquire.html'">문의하기</button>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<div id="services_tab" class="services_tab">
+
+    <div class="service1_section" id="service1_section" onclick="onClickServices(event)">
+        <div id="services_img" class="services_img">
+            <div id="service1" class="service1">
+                <img class="service1_img_tag" alt="로딩실패" src="resources/develop.png"/>
+            </div>
+            <div id="service2" class="service2">
+                <img class="service2_img_tag" src="resources/hosting.png"/>
+            </div>
+            <!--    <div id="service2" class="service2">-->
+            <!--        <img src="resources/hosting.svg"/>-->
+            <!--    </div>-->
+        </div>
+        <div id="services_text" class="services_text">
+            <div id="services_text1" class="services_text1">
+                <h1>개발</h1>
+            </div>
+            <div id="services_text2" class="services_text1">
+                <h1>호스팅</h1>
+            </div>
+            <!--    <div id="service2" class="service2">-->
+            <!--        <img src="resources/hosting.svg"/>-->
+            <!--    </div>-->
+        </div>
+    </div>
+    <div class="develop_detail" id="develop_detail">
+
+        <div class="detail1_textline" id="detail1_textline" onclick="onClickList1()">
+            <h1>컨설팅 및 솔루션</h1>            
+            <img id="detail1_img" src="resources/develop1.png"/>
+        </div>
+
+        <div class="detail2_textline" id="detail2_textline" onclick="onClickList1()">
+            <h1>기획</h1>
+            <img id="detail2_img" src="resources/develop2.png"/>
+        </div>
+
+        <div class="detail3_textline" id="detail3_textline" onclick="onClickList1()">
+            <h1>디자인</h1>
+            <img id="detail3_img" src="resources/develop3.png"/>
+        </div>
+
+        <div class="detail4_textline" id="detail4_textline" onclick="onClickList1()">
+            <h1>개발</h1>
+            <img id="detail4_img" src="resources/develop4.png"/>
+        </div>
+
+        <div class="detail5_textline" id="detail5_textline" onclick="onClickList1()">
+            <h1>테스트</h1>
+            <img id="detail5_img" src="resources/develop5.png"/>
+        </div>
+
+        <div class="detail6_textline" id="detail6_textline" onclick="onClickList1()">
+            <h1>문서화</h1>
+            <img id="detail6_img" src="resources/develop6.png"/>
+        </div>
+
+        <div class="detail7_textline" id="detail7_textline" onclick="onClickList1()">
+            <h1>작업완료</h1>
+            <img id="detail7_img" src="resources/develop7.png"/>
+        </div>
+
+    </div>
+    <div class="hosting_detail" id="hosting_detail">
+        <div class="hosting1">
+            <h1>단독 서버 호스팅</h1>
+            <img id="hosting1_img" src="resources/hosting1.png"/>            
+            <h2>
+                *도메인 발급: 유료 서비스(.com, .shop, .net)<br>
+                *ISRG 무료 https 인증서 이용 가능
+            </h2>
+        </div>
+
+        <div id="hosting2">
+            <h1>타 업체 서버 호스팅</h1>
+            <img id="hosting2_img" src="resources/hosting2.png"/>
+            <h2>*기본 트래픽 : 1TB 그 이후 1GB당 100원<br>
+                *도메인 발급: 유료 서비스(.com, .shop, .net)
+            </h2>
+        </div>
+
+        <div id="hosting3">
+            <h1>클라우드 서버 호스팅</h1>
+            <img id="hosting3_img" src="resources/hosting3.png"/>
+            <h2>
+                *도메인 발급: 유료 서비스(.com, .shop, .net)<br>
+                *ISRG 무료 https 인증서 이용 가능
+            </h2>
+        </div>
+
+        <div id="hosting4">
+            <h1>타 업체 클라우드 서버 호스팅</h1>
+            <img id="hosting4_img" src="resources/hosting4.png"/>
+            <h2>*기본 트래픽 : 1TB 그 이후 1GB당 100원<br>
+                *도메인 발급: 유료 서비스(.com, .shop, .net)
+            </h2>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container" id="footer-container">
+            <hr style="max-width: 100%; text-align: center;border: solid 1px #8B8B8B; margin-top: 100px"/>
+            <div class="branding">
+                <div class="toleft">
+                    <h1>ADDRESS</h1>
+                    <p>
+                        경기도 안양시 만악구 덕천로 152번길 25<br>
+                        아이에스비즈타워 B동 1506호
+                    </p>
+                    <div class="copy_right" id="copy_right">
+                        <p>
+                            Copyright 2022. Lodong Co., Ltd. All rights reserced.
+                        </p>
+                    </div>
+                </div>
+                <div class="tomiddle">
+                    <h1>TEL</h1>
+                    <p>
+                        010-6575-1161
+                    </p>
+                </div>
+                <div class="toright">
+                    <h1>E-Mail</h1>
+                    <p>
+                        cyj@lodong.co.kr
+                    </p>
+                </div>
+                <div class="rightLogo">
+                    <img src="resources/main_logo.png">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+
+</body>
+</html>

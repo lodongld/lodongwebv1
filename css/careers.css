@@ -1,0 +1,89 @@
+.careers-intro {
+  max-width: 1920px;
+  margin: auto;
+  padding-left: 10%;
+  font-family: var(--ff-nav);
+}
+.careers-intro h1 {
+  font-family: var(--ff-nav);
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 150px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.careers-intro p {
+  font-size: 18px;
+  color: var(--clr-font);
+  text-align: left;
+  margin-bottom: 250px;
+}
+
+.career-container {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-wrapper {
+  max-width: 1920px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0 12%;
+}
+
+.career-card {
+  font-weight: 400;
+  width: 40%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 1s all;
+  border-radius: 14px;
+  padding: 0px 30px 100px 30px;
+  margin: 10px 10px;
+}
+
+.career-card h1 {
+  font-family: "Apple SD Gothic Neo";
+  padding-top: 60%;
+  color: white;
+  text-align: left;
+}
+
+.card-topline {
+  height: 2px;
+  width: 100px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.career-card p,
+.career-card a {
+  font-family: var(--ff-nav);
+  padding-top: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+  font-size: 28px !important;
+}
