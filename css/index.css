@@ -41,7 +41,38 @@
     /*transition: 0.5s; !* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) *!*/
 }
 
+.arrowred {
+    transform: translateX(-50%);
+    animation: float 3s ease-in-out infinite;
+    }
 
+    @keyframes float {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -40px);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+    }
+
+    .bounce {
+    animation: bounce 3s ease-in-out;
+    }
+
+    @keyframes bounce {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 0;
+    }
+    }
 
 .service-banner {
 
@@ -87,7 +118,7 @@
     height: 200px;
 }
 
-.main-portfolio {
+#main-portfolio {
     display: inline-flex;
     position: relative;
     justify-content: center;
@@ -98,8 +129,6 @@
 
 .main-portfolio1 {
     position: relative;
-
-
 }
 
 .main-portfolio2_inner{
@@ -139,7 +168,7 @@
     border:solid 1px;
 }
 
-.main-portfolio2 {
+#main-portfolio2 {
     display: inline-flex;
     position: relative;
     justify-content: center;
@@ -148,7 +177,7 @@
     cursor: pointer;
 
 }
-.main-portfolio3 {
+#main-portfolio3 {
     display: inline-flex;
     position: relative;
     justify-content: center;
@@ -156,14 +185,27 @@
     margin-top: 5%;
     cursor: pointer;
 }
-.main-portfolio4 {
+#main-portfolio4 {
     display: inline-flex;
     position: relative;
     justify-content: center;
     margin-right: 200px;
     cursor: pointer;
 }
-.main-portfolio img, .main-portfolio2 img{
+
+.main-portfolio {
+transition: transform 0.2s ease-in-out;
+}
+
+.main-portfolio:hover {
+transform: scale(1.1);
+}
+
+.main-portfolio.animate {
+transform: translateY(50px);
+}
+
+#main-portfolio img, #main-portfolio2 img{
     width: 80%;
 }
 .port3_img, .port4_img{
@@ -171,8 +213,6 @@
 }
 
 .container .services a {
-
-
     text-decoration: none;
     font-size: 18px;
     line-height: 30px;

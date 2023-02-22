@@ -16,3 +16,36 @@
 //   document.body.scrollTop = 0;
 //   document.documentElement.scrollTop = 0;
 // }
+// window.addEventListener("wheel", (e) => {
+//     const box = document.querySelector('.main-portfolio');
+//     const boxPosition = box.getBoundingClientRect().top;
+//     const screenPosition = window.innerHeight / 1.5;
+//     console.log(e.isTrusted)
+//     if (boxPosition < screenPosition) {
+//       box.classList.add('bounce');
+//     } else {
+//       box.classList.remove('bounce');
+//     }
+// });
+$(document).ready(function() {
+    const sections = $('.main-portfolio');
+    const windowHeight = $(window).height();
+  
+    $(window).scroll(function() {
+      const scrollTop = $(this).scrollTop();
+  
+      sections.each(function() {
+        const sectionTop = $(this).offset().top;
+        const sectionHeight = $(this).outerHeight();
+  
+        if (scrollTop + windowHeight / 2 > sectionTop && scrollTop + windowHeight / 2 < sectionTop + sectionHeight) {
+          const sectionId = $(this).attr('id');
+          $('#'+sectionId).addClass('bounce');
+          //console.log(`Section ${sectionId} is in the center of the screen.`);
+        }else{
+            const sectionId = $(this).attr('id');
+          $('#'+sectionId).removeClass('bounce');
+        }
+      });
+    });
+  });

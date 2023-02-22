@@ -43,7 +43,7 @@ function lottie_intro() {
     }
 }
 
-lottie_intro()
+lottie_intro() 
 
 
 

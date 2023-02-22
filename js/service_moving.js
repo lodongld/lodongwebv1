@@ -51,7 +51,7 @@ window.addEventListener("wheel", (e) => {
 
             if (window.getComputedStyle(ele2).display === 'flex') {
                 const topheight = document.getElementById('service1_section');
-                if(this.scrollY>= topheight.offsetHeight){
+                if(this.scrollY >= topheight.offsetHeight){
                     const service1_section = document.getElementById("service1_section");
                     service1_section.style.display = 'none';
                 }
