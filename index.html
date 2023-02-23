@@ -124,7 +124,7 @@
             overflow: hidden;
         }
     </style>
-    <div id="container_article" class="container_article">
+    <div id="container_article" class="container-fluid">
         <div class="service-banner">
             <div class="service-intro">
                 <h1>실패 없는 개발</h1>
@@ -141,30 +141,39 @@
                 <img class="arrowred" src="resources/red_arrow_bottom.svg">
             </div>
 
-            <div class="blank1"></div>
-            <div class="main-portfolio" id="main-portfolio" onClick="location.href='first.html'">
-                <div class="main-portfolio1" id="main-portfolio1">
-                    <img alt="port1_img" class="port1_img" id="port1_img" src="resources/main-port1.svg"/>
+            <div class="row gap-5">
+                <!-- <div class="col-xxl-12 col-lg-8 main-portfolio" id="main-portfolio" onClick="location.href='first.html'">
+                    <div class="main-portfolio1" id="main-portfolio1">
+                        <img alt="port1_img" class="port1_img" id="port1_img" src="resources/main-port1.svg"/>
+                    </div>
+                    <div class="lottie_port1" id="lottie_port1"></div>
                 </div>
-                <div class="lottie_port1" id="lottie_port1"></div>
-            </div>
-            <div class="main-portfolio" id="main-portfolio2" onClick="location.href='second.html'">
-                <div class="main-portfolio2" id="main-portfolio2">
-                    <img class="main-portfolio2_inner" id="main-portfolio2_inner" src="resources/main-port2.svg"/>
+                <div class="col-xxl-12 col-lg-8 main-portfolio" id="main-portfolio2" onClick="location.href='second.html'">
+                    <div class="main-portfolio2" id="main-portfolio2">
+                        <img class="main-portfolio2_inner" id="main-portfolio2_inner" src="resources/main-port2.svg"/>
+                    </div>
+                    <div class="lottie_port2" id="lottie_port2"></div>
+                </div> -->
+                <div class="col-xxl-8 col-lg-7 offset-xxl-3 offset-lg-3 main-portfolio" id="main-portfolio" onClick="location.href='first.html'">
+                    <img class="port1_img img-fluid" id="port1_img" src="resources/keflavik.svg"/>
+                    <!-- <div class="lottie_port3" id="lottie_port3"></div> -->
                 </div>
-                <div class="lottie_port2" id="lottie_port2"></div>
-            </div>
-            <div class="main-portfolio" id="main-portfolio3" onClick="location.href='third.html'">
-                <img class="port3_img" id="port3_img" src="resources/career.svg"/>
-                <!-- <div class="lottie_port3" id="lottie_port3"></div> -->
-            </div>
-            <div class="main-portfolio" id="main-portfolio4" onClick="location.href='fourth.html'">
-                <img class="port4_img" id="port4_img" src="resources/kiosk.svg"/>
-                <!-- <div class="lottie_port4" id="lottie_port4"></div> -->
+                <div class="col-xxl-8 col-lg-7 offset-xxl-1 offset-lg-1 main-portfolio" id="main-portfolio2" onClick="location.href='second.html'">
+                    <img class="port2_img img-fluid" id="port2_img" src="resources/golf.svg"/>
+                    <!-- <div class="lottie_port3" id="lottie_port3"></div> -->
+                </div>
+                <div class="col-xxl-8 col-lg-7 offset-xxl-3 offset-lg-3 main-portfolio" id="main-portfolio3" onClick="location.href='third.html'">
+                    <img class="port3_img img-fluid" id="port3_img" src="resources/career.svg"/>
+                    <!-- <div class="lottie_port3" id="lottie_port3"></div> -->
+                </div>
+                <div class="col-xxl-8 col-lg-7 offset-xxl-1 offset-lg-1 main-portfolio" id="main-portfolio4" onClick="location.href='fourth.html'">
+                    <img class="port4_img img-fluid" id="port4_img" src="resources/kiosk.svg"/>
+                    <!-- <div class="lottie_port4" id="lottie_port4"></div> -->
+                </div>
             </div>
         </div>
-        <div class="cooperation container-fluid bg-light p-5" id="cooperation">
-            <h5 class="p-3">로동과 함께하셨습니다</h5>
+        <div class="cooperation container-fluid p-5" id="cooperation">
+            <h5>로동과 함께하셨습니다</h5>
             <img class="img-fluid" src="resources/corporation.svg" alt="">
         </div>
     </div>
