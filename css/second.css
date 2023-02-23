@@ -51,17 +51,7 @@ body {
     background-repeat: no-repeat;
     justify-content: center;
     background-position: center;
-    background-color: #FFB800;
-}
-.top_bar3 {
-    width: 100%;
-    height: 674px;
-    position: relative;
-    background-image: url("../resources/career/careerbanner.svg");
-    background-repeat: no-repeat;
-    justify-content: center;
-    background-position: center;
-    background-color: #FFB800;
+    background-color: #084520;
 }
 
 .text_container {
