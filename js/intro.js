@@ -43,7 +43,9 @@ function lottie_intro() {
     }
 }
 
-lottie_intro() 
+document.addEventListener("DOMContentLoaded", function() {
+lottie_intro();
+}); 
 
 
 
