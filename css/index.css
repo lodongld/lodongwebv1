@@ -9,7 +9,7 @@
 .lottie {
 
     position: fixed;
-    background: #000;
+    background: #000 !important;
     left: 0;
     right: 0;
     top: 0;
@@ -44,6 +44,7 @@
 .arrowred {
     transform: translateX(-50%);
     animation: float 3s ease-in-out infinite;
+    margin: 15rem 0;
     }
 
     @keyframes float {

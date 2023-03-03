@@ -158,9 +158,6 @@ header {
     letter-spacing: 1px;
 }
 
-
-
-
 .navbar {
     width: 37%;
     background-color: var(--clr-neutral);
@@ -184,7 +181,7 @@ header {
     text-decoration: none;
 }
 
-.dropdown{
+.dropdowncont{
     display: flex;
     width: 37%;
     margin-top: auto;
@@ -192,8 +189,6 @@ header {
     align-items: end;
     justify-content: left;
 }
-
-
 
 
 .dropdown_contrainer_service{
@@ -205,8 +200,6 @@ header {
     text-align: left;
     justify-content: left;
 }
-
-
 .dropbtn_service button {
     min-width: 35px;
     font-size: 10px;
@@ -220,8 +213,6 @@ header {
     color: var(--clr-font);
 }
 
-
-
 .dropdown-content-services {
     display: none;
     position: absolute;
@@ -232,6 +223,7 @@ header {
     top: 60px;
 
 }
+
 .dropdown-content-services a {
     float: none;
     display: block;
@@ -242,10 +234,6 @@ header {
     text-align: left;
     
 }
-
-
-
-
 
 .dropdown_contrainer_language{
     display: flex;
@@ -296,6 +284,7 @@ header {
     top: 60px;
 
 }
+
 .dropdown-content a {
     float: none;
     display: block;
@@ -306,9 +295,6 @@ header {
     text-align: left;
 
 }
-
-
-
 
 .dropdown_language span{
     font-size: 15px;
@@ -333,9 +319,6 @@ header {
     margin-left: 5px;
 }
 
-
-
-
 .dropdown_service:hover .dropdown-content-services {
     display: block;
 
@@ -350,8 +333,6 @@ header {
     display: block;
     text-align: left;
 }
-
-
 
 .dropdown_service span{
     font-size: 15px;
@@ -371,9 +352,6 @@ header {
     width: 7px;
     height: 4px;
 }
-
-
-
 
 .dropbtn button {
     border: none;
@@ -409,7 +387,6 @@ header {
     background-color: #ddd;
 }
 
-
 .ask{
     margin-left: 70px;
 }
@@ -425,7 +402,6 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-
     cursor: pointer;
 }
 
@@ -448,7 +424,6 @@ header {
     display: flex;
     margin: auto;
     text-align: center;
-
     color: var(--clr-unclick);
 }
 

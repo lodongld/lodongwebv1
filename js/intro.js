@@ -8,13 +8,9 @@ function lottie_intro() {
         renderer: 'svg',
         loop: false,
         autoplay: true,
-
         path: 'https://assets7.lottiefiles.com/packages/lf20_TVY4YMTEIf.json' // the path to the animation json
     });
-
-
     lottieAnim.play();
-
     lottieAnim.onComplete = function () {
         var elem = document.getElementById("lottie");
         elem.style.display = "absolute";
@@ -27,7 +23,7 @@ function lottie_intro() {
                 ]
             },
             {
-                duration: 800, // 밀리초 지정
+                duration: 1000, // 밀리초 지정
                 fill: 'forwards', // 종료 시 속성을 지님
                 easing: 'ease' // 가속도 종류
             }
@@ -36,15 +32,12 @@ function lottie_intro() {
         setTimeout(function () {
             elem1.style.visibility = "visible";
             elem.style.visibility = "hidden";
-
-
         }, 300);
 
     }
 }
-
 document.addEventListener("DOMContentLoaded", function() {
-lottie_intro();
+    lottie_intro();
 }); 
 
 

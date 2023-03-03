@@ -141,18 +141,17 @@
 }
 
 .develop_detail {
-    margin-top: 103px;
+    margin-top: 0;
     position: relative;
     display: none;
-    height: 86vh;
+    height: 84vh;
     justify-content: center;
 }
 .develop_detail div{
     width: 100vw;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
     cursor: pointer;
-
 }
 
 .develop_detail img{

@@ -15,6 +15,7 @@
             name="keywords"
             content="HTML, CSS, JavaScript, Android, Kotlin, IOS, Swift, Java, Python, IT, IT Development, Developer, Web Developer, Native Mobile Developer, Mobile Developer, Programming, Software, Software Company, Lodong, Korea, Jobs, Careers"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
@@ -35,6 +36,8 @@
     />
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/service.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <script
@@ -51,56 +54,59 @@
 </head>
 <body onmousemove="mouse_position(event)">
 
-<header>
-
-    <div id="container_header" class="container_header">
-
-        <div class="navbar">
-            <a href="service.html">SERVICE</a>
-            <a href="#">TEAM</a>
-            <a href="#">APPROACH</a>
-            <a href="#">CAREERS</a>
-        </div>
-        <div class="logo">
-            <a href="index.html"><h1>LODONG</h1></a>
-        </div>
-        <div class="dropdown">
-            <div id="dropdown_contrainer_service" class="dropdown_contrainer_service">
-
-                <div class="dropdown_service">
-                    <span>Dev</span>
-
-                    <img class="span_v" id="span_v" src="./resources/spinner.svg"></img>
-
-                    <div class="dropdown-content-services">
-                        <a href="#">개발</a>
-                        <a href="#">디자인</a>
-                    </div>
-                </div>
-
+    <header>
+        <style>
+            .dropdown-menu{
+                width: 5rem;
+            }
+            @media (max-width:450) {
+                .navbar, .logo, .dropdowncont{
+                    display: grid;
+                    grid-template-rows: auto 1fr auto;
+                }
+            }
+        </style>
+        <div id="container_header" class="container_header">
+            <div class="navbar">
+                <a href="service.html">SERVICE</a>
+                <a href="#">TEAM</a>
+                <a href="#">APPROACH</a>
+                <a href="#">CAREERS</a>
             </div>
-
-            <div id="dropdown_contrainer_language" class="dropdown_contrainer_language">
-                <div class="dropdown_language">
-                    <span>KOR</span>
-                    <img class="span_v_lan" id="span_v_lan" src="./resources/spinner.svg"></img>
-
-                    <div class="dropdown-content">
-                        <a href="#">KOR</a>
-                        <a href="#">ENG</a>
-                    </div>
-                </div>
-                <div class="dropbtn">
-                </div>
+    
+            <div class="logo">
+                <a href="index.html"><h1>LODONG</h1></a>
             </div>
-            <div class="ask">
-                <button class="orderbtn" onClick="location.href='inquire.html'">문의하기</button>
+            
+            <div class="dropdowncont">
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dev
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">개발</a></li>
+                        <li><a class="dropdown-item" href="#">디자인</a></li>
+                    </ul>
+                </div>           
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        KOR
+                    </a>
+    
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">KOR</a></li>
+                        <li><a class="dropdown-item" href="#">ENG</a></li>
+                    </ul>
+                </div>
+                <div class="ask" >
+                    <button class="orderbtn" onClick="location.href='inquire.html'" >문의하기</button>
+                </div>
             </div>
         </div>
-    </div>
-
-</header>
-
+    
+        <!--bodymovin library-->
+        </div>
+    </header>
 <div id="services_tab" class="services_tab">
 
     <div class="service1_section" id="service1_section" onclick="onClickServices(event)">
@@ -230,7 +236,7 @@
                     </p>
                 </div>
                 <div class="rightLogo">
-                    <img src="resources/main_logo.png">
+                    <img src="resources/lodong.svg">
                 </div>
             </div>
         </div>
