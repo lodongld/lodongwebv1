@@ -1,5 +1,4 @@
 
-
 @font-face {
     font-family: 'leferi';
     src: url('../fonts/LeferiBaseRegular.otf') format('opentype');
@@ -44,7 +43,7 @@
 .arrowred {
     transform: translateX(-50%);
     animation: float 3s ease-in-out infinite;
-    margin: 15rem 0;
+    margin: 10rem 0;
     }
 
     @keyframes float {
@@ -197,7 +196,7 @@
 }
 
 .main-portfolio:hover {
-transform: scale(1.1);
+transform: scale(1.05);
 }
 
 .main-portfolio.animate {

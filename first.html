@@ -25,7 +25,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- <script src="js/onbutton.js"></script> -->
   </head>
-
   <body>
     <nav>
       <div id="container_header" class="container_header">
@@ -67,58 +66,82 @@
       </div>
     </nav>
     <section>
-      <div id="top_bar" class="top_bar">
-        <div id="text_container" class="text_container">
-
-          <div id="text1" class="text1">
-            <p>케플라비크</p>
-
-          </div>
-
-          <div id="text2" class="text2">
-            <p>시공부터 결제까지 한번에 <br> 해결해보세요</p>
-          </div>
-
-
+      <div id="top_bar" class="container-fluid top_bar">
+        <div class="row justify-content-center text-light">
+            <!-- <div id="text_container" class="align-bottom col-sm-8 col-lg-7 col-xxl-5 text_container text-left">            
+              <div id="text1" class="text1">
+                <p>케플라비크F</p>
+              </div>
+              <div id="text2" class="text2">
+                <p>시공부터 결제까지 한번에 </p>
+                <p>해결해보세요</p>
+              </div>
+              <div id="text2" class="text2 mt-5">
+                <img src="resources/white-arrow-head.svg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+              </div>
+            </div>
+            <div class="clear-fix"></div>
+            <div id="text_bottom" class="col-sm-8 col-lg-7 col-xxl-5 text_bottom">
+              <div id="first_sentence" class="first_sentence">
+                <a>기간</a>
+                <p>2022.06 ~ 2022.12</p>
+              </div>
+              <div id="second_sentence" class="second_sentence">
+                <a>플랫폼</a>
+                <p>안드로이드/웹</p>
+              </div>
+            </div> -->
+            <div class="col-sm-8 col-lg-6 col-xxl-6 topbar-mt">
+              <p class="fs-3 bg-transparent">케플라비크F</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-8 col-lg-6 col-xxl-6">
+                <p class="fs-2 bg-transparent">시공부터 결제까지 한번에 </p>
+                <p class="fs-2 bg-transparent">해결해보세요</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-8 col-lg-6 col-xxl-6">
+              <img src="resources/white-arrow-head.svg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            </div>
         </div>
-        <div id="text_bottom" class="text_bottom">
-          <div id="first_sentence" class="first_sentence">
-
-            <a>기간</a>
-            <p> 2022.06 ~ 2022.12</p>
+        <div class="row mt-15 text-light">
+          <div class="col-sm-4 col-lg-2 col-xxl-2 offset-xxl-3 offset-lg-3  offset-sm-2">
+            <span class="fs-6 bg-transparent me-2">기간</span> <span class="fs-6 bg-transparent">2022.06 ~ 2022.12</span>
           </div>
-          <div id="second_sentence" class="second_sentence">
-
-            <a> 플랫폼</a>
-            <p> ANDROID/IOS/WEB</p>
+          <div class="col-sm-4 col-lg-2">
+            <span class="fs-6 bg-transparent me-2">기간</span> <span class="fs-6 bg-transparent">2022.06 ~ 2022.12</span>
           </div>
         </div>
       </div>
       <div id="container_first" class="container-fluid">
-        <div class="row mt-5 gx-5 justify-content-center">
-          <div class="col-xxl-5 section-cont">
-            <img class="img-fluid" src="resources/first/section1.svg" alt="">
+        <div class="row mt-5 gap-5 justify-content-center">
+          <div class="col-xxl-6 mt-15 section-cont">
+            <img class="img-fluid" src="resources/first/keflaviksectionhead.svg" alt="">
           </div>
           <div class="clear-fix"></div>
-          <div class="col-xxl-5 section-cont">
-            <img class="img-fluid" src="resources/first/section2.svg" alt="">
+          <div class="col-xxl-6 section-cont">
+            <img class="img-fluid" src="resources/first/keflaviksection1.svg" alt="">
+          </div>
+          <div class="clear-fix"></div>
+          <div class="col-xxl-6 section-cont">
+            <img class="img-fluid" src="resources/first/keflaviksection2.svg" alt="">
           </div>
           <div class="clear-fix"></div>
 
-          <div class="col-xxl-5 section-cont">
-            <img class="img-fluid" src="resources/first/section3.svg" alt="">
+          <div class="col-xxl-6 section-cont">
+            <img class="img-fluid" src="resources/first/keflaviksection3.svg" alt="">
           </div>
           <div class="clear-fix"></div>
-          <div class="col-xxl-5 section-cont">
-            <img class="img-fluid" src="resources/first/section4.svg" alt="">
+          <div class="col-xxl-6 section-cont">
+            <img class="img-fluid" src="resources/first/keflaviksection4.svg" alt="">
           </div>
         </div>
-        <div class="row gx-5 justify-content-center">
-          <div class="col-xxl-2 col-lg-5 col-sm-6 col-xs-12 botlink">
-            <img class="img-fluid" src="resources/moveToDolbom.svg" onClick="location.href='third.html'">
-          </div>
-          <div class="col-xxl-2 col-xl-5 col-lg-5 col-sm-6 col-xs-12  botlink">
+        <div class="row justify-content-center mt-15">
+          <div class="col-xxl-3 col-xl-5 col-lg-5 col-sm-6 col-xs-12  botlink">
             <img class="img-fluid" src="resources/moveToGolf.svg" onClick="location.href='second.html'">
+          </div>
+          <div class="col-xxl-3 col-lg-5 col-sm-6 col-xs-12 botlink">
+            <img class="img-fluid" src="resources/moveToDolbom.svg" onClick="location.href='third.html'">
           </div>
         </div>
       </div>

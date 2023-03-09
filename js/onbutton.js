@@ -53,13 +53,10 @@ function port1_start() {
     } else {
         box_count.innerHTML = '';
     }
-
-
 }
 
 
 function port2_start() {
-
     const box_count = document.getElementById("lottie_port2");
     if (box_count.children.length === 0) {
         var lottieAnim_port2 = lottie.loadAnimation({
@@ -74,6 +71,4 @@ function port2_start() {
     } else {
         box_count.innerHTML = '';
     }
-
-
 }

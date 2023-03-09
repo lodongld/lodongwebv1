@@ -38,7 +38,6 @@
 @font-face {
     font-family:load_leferi;
     src: url('../fonts/LeferiBaseRegular.otf');
-
 }
 
 @font-face {
@@ -80,11 +79,16 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    font-family: "notoloadnor",Arial, Helvetica, sans-serif;
+}
+
 body,
 h1,
 h2,
 h3,
-p {
+p {    
     background:  var(--clr-neutral);
     margin: 0;
     left: 0;
@@ -100,10 +104,6 @@ h3 {
     font-family: var(--ff-logo);
     font-weight: 600;
     line-height: 1;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 /*  CSS for header/navbar */
@@ -170,8 +170,8 @@ header {
 }
 
 .navbar a {
-    font-size: 16px;
-    font-family: jura;
+    font-size: 1.2rem;
+    font-family: 'load_jura';
     font-weight: 400;
     line-height: 18.4px;
     display: inline-block;

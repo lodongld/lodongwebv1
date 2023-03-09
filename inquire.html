@@ -41,7 +41,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--    <link rel="stylesheet" href="../css/first.css"/>-->
     <script src="./js/index.js" defer></script>
-
+    
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script
             src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"
@@ -92,35 +92,34 @@
     <!--bodymovin library-->
     </div>
 </nav>
-<script src="./js/onbutton.js"></script>
+<!-- <script src="./js/onbutton.js"></script> -->
+<style>
+    .address_container, .address_container h1, .address_container h2{
+        background-color: transparent !important;
+        color: black;
+    }
+    .address_container.show {
+        background-color: black !important;
+        color: white;
+        transition: background-color 3s ease-in;
+    }
+    .address_container.show h1, .address_container.show h2{
+        color: white;
+    }
+</style>
 <section>
-    <div class="container" id="container">
+    <div class="container-fluid" id="container">
+        <div class="address_container card rounded-5 shawdow-3" id="address_container">
+            <h1 id="id1" class="id1 rounded-5">회사</h1>
+            <h1 id="id2" class="id2 rounded-5">전화번호</h1>
+            <h1 id="id3" class="id3 rounded-5">이메일</h1>
 
-        <div class="address_container" id="address_container">
-
-            <h1 id="id1" class="id1">회사</h1>
-            <h1 id="id2" class="id2">전화번호</h1>
-            <h1 id="id3" class="id3">이메일</h1>
-
-
-            <h2 id="id11" class="id11">경기도 안양시 만악구 덕천로 152번길 25<br>
+            <h2 id="id11" class="id11 rounded-5">경기도 안양시 만악구 덕천로 152번길 25<br>
                 아이에스비즈타워 B동 1506호</h2>
 
-            <h2 id="id22" class="id22">010-6575-1161</h2>
-            <h2 id="id33" class="id33">cyj@lodong.co.kr</h2>
+            <h2 id="id22" class="id22 rounded-5">010-6575-1161</h2>
+            <h2 id="id33" class="id33 rounded-5">cyj@lodong.co.kr</h2>
         </div>
-
-        <div class="inquire_mail" id="inquire_mail">
-
-            <textarea class="input1" type="text" name="address" size="40" height="300" placeholder="이름"></textarea>
-            <textarea class="input2" id="input2" type="text" name="address" size="40" placeholder="이메일"></textarea>
-            <textarea class="input3" placeholder="프로젝트에 대해 알려주세요. 어떤 도움이 필요한가요?"></textarea>
-            <button class="submit_send" onclick="sendEmail()">문의하기</button>
-            <form id="email_form" class="email_form" method="POST" data-email="cyj@lodong.co.kr"
-                  action="https://script.google.com/macros/s/AKfycbxeJK9-w09tVnzJ0_7oQFTtMczbyEf0y-Dv5ujgNaFnQJqgjdaswak1ntu9Nm-jT-m9YA/exec"></form>
-        </div>
-
-
     </div>
 </section>
 
@@ -162,7 +161,7 @@
                 </p>
             </div>
             <div class="rightLogo">
-                <img src="resources/main_logo.png">
+                <img src="resources/lodong.svg">
             </div>
 
 
@@ -170,7 +169,14 @@
     </div>
 
 </footer>
+<script>
+    $('.address_container').hide();
+    $('.address_container').fadeIn(5000,function(){
+        $(this).addClass('show').fadeIn(5000);
+    });
+    // setTimeout(function() {
+    //     document.querySelector('.address_container').classList.add('show');
+    // }, 1000);
+</script>
 </body>
-
-
 </html>

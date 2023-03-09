@@ -43,7 +43,7 @@ $(document).ready(function() {
           $('#'+sectionId).addClass('bounce');
           //console.log(`Section ${sectionId} is in the center of the screen.`);
         }else{
-            const sectionId = $(this).attr('id');
+          const sectionId = $(this).attr('id');
           $('#'+sectionId).removeClass('bounce');
         }
       });
