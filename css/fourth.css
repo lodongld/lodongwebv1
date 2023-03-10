@@ -22,6 +22,7 @@
     background-color: #F6EFE0;
 }
 
+
 @font-face {
     font-family: 'leferi';
     src: url('../fonts/LeferiBaseRegular.otf') format('opentype');
@@ -445,5 +446,21 @@ body {
 }
 
 .mt-15{
-    margin-top: 10rem;
+    margin-top: 9rem;
+}
+.topbar-mt{
+    margin-top: 9rem;
+}
+
+@media (min-width:2500px){
+    .topbar-mt{
+        margin-top: 35rem;   
+    }
+}
+
+@media (min-width:3500px){
+    .topbar-mt{
+        margin-top: 75rem;
+        font-size: 25rem !important;
+    }
 }

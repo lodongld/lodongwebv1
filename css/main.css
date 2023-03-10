@@ -122,6 +122,7 @@ header {
     min-height: 103px;
     visibility: visible;
     background-color: var(--clr-neutral);
+    width: 100%;
 }
 .container {
     margin: auto;
@@ -132,19 +133,21 @@ header {
     visibility: visible;
     background-color: var(--clr-neutral);
 }
+
 .container_article{
     width: 100%;
     margin: 0px;
 }
+
 .logo {
     width: 25%;
     min-width: 250px;
     text-align: center;
     margin: auto;
     max-width: 480px;
-
-
+    background-color: transparent !important;
 }
+
 .logo a,
 
 .logo h1 {
@@ -157,8 +160,10 @@ header {
     font-weight: 1500;
     letter-spacing: 1px;
 }
-
-.navbar {
+nav{
+    font-family: 'load_jura';
+}
+/* .navbar {
     width: 37%;
     background-color: var(--clr-neutral);
     margin-top: auto;
@@ -179,7 +184,7 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+} */
 
 .dropdowncont{
     display: flex;
@@ -387,10 +392,6 @@ header {
     background-color: #ddd;
 }
 
-.ask{
-    margin-left: 70px;
-}
-
 .orderbtn {
     outline: 2px solid var(--clr-primary);
     border-radius: 4px;
@@ -471,6 +472,9 @@ header {
 .footer-container {
     max-width: 1920px;
     margin: auto;
+}
+footer{
+    font-family: load_apple,sans-serif;
 }
 
 .branding {
