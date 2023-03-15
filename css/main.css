@@ -157,7 +157,8 @@ header {
 }
 .headerarrow {
     transform: translateX(-50%);
-    animation: float 3s ease-in-out infinite;
+    animation: float 1.5s ease-in-out infinite;
+    margin: 5rem 0 -5rem;
 }
     
 @keyframes float {
@@ -165,7 +166,7 @@ header {
     transform: translate(-50%, 0);
 }
 50% {
-    transform: translate(-50%, -40px);
+    transform: translate(-50%, -150px);
 }
 100% {
     transform: translate(-50%, 0);
@@ -667,21 +668,21 @@ hr {
         padding: 5rem auto;
     }
     .nav-item{
-        margin: 0 0.5rem
+        margin: 0 1rem
     }
     .nav-item a{
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .orderbtn {
         padding: 1.5rem 1.5rem;
         font-size: 2rem;
     }
     .logo a, .logo h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         letter-spacing: 1px;
     }
     footer p, footer span{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .headerarrow {
         width: 1.8rem;
@@ -701,7 +702,7 @@ hr {
         padding:1rem auto !important;
     }
     .logo a, .logo h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .cooperation img{
         width: 80vw;

@@ -41,8 +41,8 @@
 }
 .arrowred {
 transform: translateX(-50%);
-animation: float 3s ease-in-out infinite;
-margin: 10rem 0;
+animation: float 1.5s ease-in-out infinite;
+margin: 25rem 0 5rem;
 }
 
 @keyframes float {
@@ -50,7 +50,7 @@ margin: 10rem 0;
     transform: translate(-50%, 0);
 }
 50% {
-    transform: translate(-50%, -40px);
+    transform: translate(-50%, -350px);
 }
 100% {
     transform: translate(-50%, 0);
@@ -74,10 +74,10 @@ animation: bounce 3s ease-in-out;
 }
 
 .arrowredbox {
-animation: mymoveleft 3s ease-in-out infinite;
+animation: mymoveleft 1.5s ease-in-out infinite;
 }
 .arrowredbox2 {
-animation: mymoveright 3s ease-in-out infinite;
+animation: mymoveright 1.5s ease-in-out infinite;
 }
 .leftimg{
     top: 13.7rem;
