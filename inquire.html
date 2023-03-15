@@ -51,151 +51,172 @@
 
 </head>
 <body>
-    <header>
-        <nav id="container_header" class="container_header navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <div class="logo navbar-brand">
-                    <a href="index.html"><h1 class="bg-transparent">LODONG</h1></a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="service.html">SERVICE</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">APPROACH</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">CAREERS</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">TEAM</a>
-                    </li>
-                </ul>
-                <div class="d-flex" role="search">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dev
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">개발</a></li>
-                                    <li><a class="dropdown-item" href="#">디자인</a></li>
-                                </ul>
-                            </div> 
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    KOR
-                                </a>
-                
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">KOR</a></li>
-                                    <li><a class="dropdown-item" href="#">ENG</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="ask" >
-                                <button class="orderbtn" onClick="location.href='inquire.html'" >문의하기</button>
-                            </div>
-                        </li>
-                        </ul>
-                </div>
-                </div>
-            </div>
-        </nav>
-    </header>
 <!-- <script src="./js/onbutton.js"></script> -->
 <style>
     .address_container, .address_container h1, .address_container h2{
         background-color: transparent !important;
         color: black;
     }
+    .address_container{
+        border: solid 1px;
+    }
     .address_container.show {
         background-color: black !important;
         color: white;
-        transition: background-color 3s ease-in;
+        transition: background-color 3s ease-in-out;
     }
-    .address_container.show h1, .address_container.show h2{
+    .address_container.show span, .address_container.show p{
         color: white;
     }
+    .navbg{
+      background-color: #cfcece;
+    }
+    .navactive{
+      font-weight: bolder;
+    }
+    .cust-mt{
+        margin-top: 5rem;
+    }
 </style>
-<section>
-    <div class="container-fluid" id="container">
-        <div class="address_container card rounded-5 shawdow-3" id="address_container">
-            <h1 id="id1" class="id1 rounded-5">회사</h1>
-            <h1 id="id2" class="id2 rounded-5">전화번호</h1>
-            <h1 id="id3" class="id3 rounded-5">이메일</h1>
-
-            <h2 id="id11" class="id11 rounded-5">경기도 안양시 만악구 덕천로 152번길 25<br>
-                아이에스비즈타워 B동 1506호</h2>
-
-            <h2 id="id22" class="id22 rounded-5">010-6575-1161</h2>
-            <h2 id="id33" class="id33 rounded-5">cyj@lodong.co.kr</h2>
+<header>
+    <nav id="container_header" class="container_header navbar navbar-expand-lg navbg p-lg-3 p-xxl-5 z-3">
+        <div class="container-fluid">
+            <div class="logo navbar-brand ps-3">
+                <a href="index.html"><h1 class="bg-transparent">LODONG</h1></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 gap-5 text-light">
+                <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-light" href="#">CAREERS</a>
+                </li>
+                <li class="nav-item">
+                  <div class="ask" >
+                    <button class="orderbtn" onClick="location.href='inquire.html'" >문의하기</button>
+                  </div>
+                </li>
+            </ul>
+            <div class="d-flex" role="search">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dev
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">개발</a></li>
+                                <li><a class="dropdown-item" href="#">디자인</a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                KOR
+                            </a>
+            
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">KOR</a></li>
+                                <li><a class="dropdown-item" href="#">ENG</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
+            </div>
+            </div>
         </div>
+    </nav>
+</header>
+<section>
+    <div class="container-fluid">
+        <div class="row justify-content-center p-5">
+            <div class="col-lg-8 align-self-center address_container cust-mt p-5 rounded-4" id="address_container">
+                <!-- <h1 id="id1" class="id1 rounded-5">회사</h1>
+                <h1 id="id2" class="id2 rounded-5">전화번호</h1>
+                <h1 id="id3" class="id3 rounded-5">이메일</h1>
+    
+                <h2 id="id11" class="id11 rounded-5">경기도 안양시 만악구 덕천로 152번길 25<br>
+                    아이에스비즈타워 B동 1506호</h2>
+    
+                <h2 id="id22" class="id22 rounded-5">010-6575-1161</h2>
+                <h2 id="id33" class="id33 rounded-5">cyj@lodong.co.kr</h2> -->
+                <div class="row justify-content-center p-3">
+                    <div class="col-lg-5 col-xs-6 col-sm-6 p-3">
+                        <span>회사</span>
+                        <p class="fw-bold bg-transparent">경기도 안양시 만악구 덕천로 152번길 25<br>
+                            아이에스비즈타워 B동 1506호</p>
+                    </div>
+                    <div class="col-lg-3 col-xs-6 col-sm-6">
+                        <div class="col-lg-12 p-3">
+                            <span>전화번호</span>
+                            <p class="fw-bold bg-transparent">010-6575-1161</p>
+                        </div>
+                        <div class="col-lg-12 p-3">
+                            <span>이메일</span>
+                            <p class="fw-bold bg-transparent">cyj@lodong.co.kr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </section>
-
-
 <hr style="max-width: 100%; text-align: center;border: solid 1px #8B8B8B; margin-top: 100px"/>
 <footer>
-
-    <div class="footer-container">
-
-        <div class="branding">
-            <div class="toleft">
-                <h1>ADDRESS</h1>
-                <p>
-                    경기도 안양시 만악구 덕천로 152번길 25<br>
-                    아이에스비즈타워 B동 1506호
-                </p>
-
-                <div class="copy_right" id="copy_right">
-                    <p>
-                        Copyright 2022. Lodong Co., Ltd. All rights reserced.
-                    </p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 align-self-center">
+                <div class="row justify-content-center p-3">
+                    <div class="col-lg-4 col-sm-12 fs-6 p-3">
+                        <div>
+                            <span class="fw-bold p-3">ADDRESS</span>
+                            <p>경기도 안양시 만악구 덕천로 152번길 25<br>
+                            아이에스비즈타워 B동 1506호</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-6 p-3">
+                        <div>
+                            <span class="fw-bold p-3">TEL</span>                
+                            <p>010-6575-1161</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-6 p-3">
+                        <div>
+                            <span class="fw-bold p-3">E-Mail</span>        
+                            <p>cyj@lodong.co.kr</p>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
-            <div class="tomiddle">
-                <h1>TEL</h1>
-
-                <p>
-                    010-6575-1161
-                </p>
+            <div class="col-lg-3 col-sm-12 col-xs-12">
+                <div class="d-flex justify-content-center">
+                    <img class="footer-logo" src="resources/lodong.svg">
+                </div>
             </div>
-
-            <div class="toright">
-                <h1>E-Mail</h1>
-
-                <p>
-                    cyj@lodong.co.kr
-                </p>
-            </div>
-            <div class="rightLogo">
-                <img src="resources/lodong.svg">
-            </div>
-
-
         </div>
+        <div class="row mt-3">
+            <div class="col-lg-12 mt-3 mb-3">
+                <p class="text-center text-muted">
+                    Copyright 2022. Lodong Co., Ltd. All rights reserced.
+                </p>
+            </div>
+        </div>        
     </div>
-
 </footer>
 <script>
     $('.address_container').hide();
     $('.address_container').fadeIn(5000,function(){
         $(this).addClass('show').fadeIn(5000);
     });
-    // setTimeout(function() {
-    //     document.querySelector('.address_container').classList.add('show');
-    // }, 1000);
 </script>
 </body>
 </html>

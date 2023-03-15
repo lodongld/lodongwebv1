@@ -1,7 +1,6 @@
-function lottie_intro() {
 
+function lottie_intro() {
     const elem1 = document.getElementById("container_header");
-    elem1.style.visibility = "hidden";
 
     var lottieAnim = lottie.loadAnimation({
         container: document.getElementById("lottie"), // the dom element that will contain the animation

@@ -39,40 +39,66 @@
     pointer-events: none;
     /*transition: 0.5s; !* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) *!*/
 }
-
 .arrowred {
-    transform: translateX(-50%);
-    animation: float 3s ease-in-out infinite;
-    margin: 10rem 0;
-    }
+transform: translateX(-50%);
+animation: float 3s ease-in-out infinite;
+margin: 10rem 0;
+}
 
-    @keyframes float {
-    0% {
-        transform: translate(-50%, 0);
-    }
-    50% {
-        transform: translate(-50%, -40px);
-    }
-    100% {
-        transform: translate(-50%, 0);
-    }
-    }
+@keyframes float {
+0% {
+    transform: translate(-50%, 0);
+}
+50% {
+    transform: translate(-50%, -40px);
+}
+100% {
+    transform: translate(-50%, 0);
+}
+}
 
-    .bounce {
-    animation: bounce 3s ease-in-out;
-    }
+.bounce {
+animation: bounce 3s ease-in-out;
+}
 
-    @keyframes bounce {
-    0% {
-        top: 0;
-    }
-    50% {
-        top: 50px;
-    }
-    100% {
-        top: 0;
-    }
-    }
+@keyframes bounce {
+0% {
+    top: 0;
+}
+50% {
+    top: 50px;
+}
+100% {
+    top: 0;
+}
+}
+
+.arrowredbox {
+animation: mymoveleft 3s ease-in-out infinite;
+}
+.arrowredbox2 {
+animation: mymoveright 3s ease-in-out infinite;
+}
+.leftimg{
+    top: 13.7rem;
+    width:1.8rem;
+}
+.rightimg{
+    top: 14rem;
+    width:1.8rem;
+}
+@keyframes mymoveleft {
+0% {left: 11.5rem;}
+50% {left: 15rem;}
+100% {left: 11.5rem;}
+}
+
+@keyframes mymoveright {
+0% {right: 11rem;}
+50% {right: 14rem;}
+100% {right: 11rem;}
+}
+
 
 .service-banner {
 
@@ -101,7 +127,7 @@
     font-weight: 600;
 }
 
-.service-intro p {
+.service-intro span {
     font-size: 20px;
 
     line-height: 27px;
@@ -186,6 +212,7 @@
     justify-content: center;
     cursor: pointer;
 } */
+
 
 .main-portfolio {
     display: inline-flex;
@@ -575,5 +602,62 @@ transform: translateY(50px);
     }
     to {
         transform: scale(0.75) translateX(0);
+    }
+}
+
+@media(min-width: 1920px) {
+    .service-intro h1{
+        font-size: 8rem;
+    }
+
+    .services span{
+        font-size: 2rem;
+    }
+
+    .arrowred{
+        width: 3rem;
+    }
+    .leftimg{
+        top: 23rem;
+    }
+    .rightimg{
+        top: 23.5rem;
+    }
+    @keyframes mymoveleft {
+    0% {left: 18rem;}
+    50% {left: 23rem;}
+    100% {left: 18rem;}
+    }
+    
+    @keyframes mymoveright {
+    0% {right: 20rem;}
+    50% {right: 25rem;}
+    100% {right: 20rem;}
+    }
+}
+@media(max-width: 550px) {
+    .service-intro h1{
+        font-size: 3rem;
+    }
+    .leftimg{
+        top: 7rem;
+        left:6rem;
+        width: 1rem;
+    }
+    .rightimg{
+        top: 7.2rem;
+        right:6rem;
+        width: 1rem;
+    }
+    @keyframes mymoveleft {
+    0% {left: 6rem;}
+    50% {left: 8rem;}
+    100% {left: 6rem;}
+    }
+        
+    @keyframes mymoveright {
+    0% {right: 6rem;}
+    50% {right: 8rem;}
+    100% {right: 6rem;}
     }
 }

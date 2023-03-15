@@ -56,7 +56,6 @@ window.addEventListener("wheel", (e) => {
                     service1_section.style.display = 'none';
                 }
             }
-
         } else {
             if (isRollingUp === false) {
                 if (downFirst === 2) {
@@ -65,7 +64,6 @@ window.addEventListener("wheel", (e) => {
                         if (secondPicture === false) {
                             displayscrolldown("detail1_textline","detail2_textline")
                             secondPicture = true;
-                            //상단 서비스 내용 감추기
                             const service1_section = document.getElementById("service1_section");
                             service1_section.style.display = 'none';
                         } else if (thirdPicture === false) {
@@ -87,20 +85,20 @@ window.addEventListener("wheel", (e) => {
                         }
                     }else{
                         
-                        if (secondHosting === false) {
-                            displayscrolldown("hosting1","hosting2")
-                            secondHosting = true;
-                            //상단 서비스 내용 감추기
-                            const service1_section = document.getElementById("service1_section");
-                            service1_section.style.display = 'none';
-                        } else if (thirdHosting === false) {
-                            displayscrolldown("hosting2","hosting3")
-                            thirdHosting = true;
-                        } else if (forthHosting === false) {
-                            displayscrolldown("hosting3","hosting4")
-                            forthHosting = true;                            
-                            endScroll = true;
-                        } 
+                        // if (secondHosting === false) {
+                        //     displayscrolldown("hosting1","hosting2")
+                        //     secondHosting = true;
+                        //     //상단 서비스 내용 감추기
+                        //     const service1_section = document.getElementById("service1_section");
+                        //     service1_section.style.display = 'none';
+                        // } else if (thirdHosting === false) {
+                        //     displayscrolldown("hosting2","hosting3")
+                        //     thirdHosting = true;
+                        // } else if (forthHosting === false) {
+                        //     displayscrolldown("hosting3","hosting4")
+                        //     forthHosting = true;                            
+                        //     endScroll = true;
+                        // } 
                     }
                     //호스팅 서비스
                     downFirst = 0;
@@ -140,17 +138,39 @@ window.addEventListener("wheel", (e) => {
                             footer.style.display = 'none';
                         }    
                     }else{
+                        // if (forthHosting === true) {
+                        //     console.log('up4')
+                        //     displayscrollup("hosting3","hosting4")
+                        //     forthHosting = false;
+                        // } else if (thirdHosting === true) {
+                        //     console.log('up3')
+                        //     displayscrollup("hosting2","hosting3")
+                        //     thirdHosting = false;
+                        // } else if (secondHosting === true) {
+                        //     console.log('up2')
+                        //     displayscrollup("hosting1","hosting2")
+                        //     secondHosting = false;
+                        // } else if (firstHosting === true) {
+                        //     console.log('up1')
+                        //     const service1_section = document.getElementById("service1_section");
+                        //     service1_section.style.display = '';
+                        //     service1_section.classList.add('visible_mode');
+                        //     const ele4 = document.getElementById("hosting_detail");
+                        //     const footer = document.getElementById("footer-container");
+                        //     ele4.style.display = 'none';
+                        //     footer.style.display = 'none';
+                        // }
                         if (forthHosting === true) {
-                            console.log('up4')
-                            displayscrollup("hosting3","hosting4")
+                            // console.log('up4')
+                            // displayscrollup("hosting3","hosting4")
                             forthHosting = false;
                         } else if (thirdHosting === true) {
-                            console.log('up3')
-                            displayscrollup("hosting2","hosting3")
+                            // console.log('up3')
+                            // displayscrollup("hosting2","hosting3")
                             thirdHosting = false;
                         } else if (secondHosting === true) {
-                            console.log('up2')
-                            displayscrollup("hosting1","hosting2")
+                            // console.log('up2')
+                            // displayscrollup("hosting1","hosting2")
                             secondHosting = false;
                         } else if (firstHosting === true) {
                             console.log('up1')

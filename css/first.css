@@ -6,8 +6,8 @@
     background-image: url("../resources/first_topbar.svg");
     background-repeat: no-repeat;
     justify-content: center;
-    background-position: center;
-    background-size: contain;
+    background-position: bottom;
+    background-size: cover;
     background-color: #FFB800;
 }
 
@@ -19,8 +19,6 @@
 @font-face {
     font-family: 'load_apple';
     src: url('../fonts/AppleSDGothicNeoB.ttf');
-
-
 }
 
 @font-face {
@@ -36,14 +34,8 @@
 }
 
 body {
-    background-color: #F5F5F5;
-    margin: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-
-
+    background-color: #F5F5F5;    
+    font-family: "load_apple_kor";
 }
 
 .container_first {
@@ -53,7 +45,6 @@ body {
     display: inline-block;
     margin: auto;
     text-align: left;
-
 }
 
 .text_container {
@@ -437,18 +428,20 @@ body {
     margin-top: 9rem;
 }
 .topbar-mt{
-    margin-top: 9rem;
+    margin-top: 11.5rem;
 }
 
-@media (min-width:2500px){
+@media screen and (min-width: 1920px) {
     .topbar-mt{
-        margin-top: 35rem;   
+        margin-top: 22rem;
     }
 }
 
-@media (min-width:3500px){
-    .topbar-mt{
-        margin-top: 75rem;
-        font-size: 25rem !important;
+@media screen and (max-width: 500px) {
+    .top_bar{
+        padding: 0 2rem;
+    }
+    .section-cont img {
+        width: 80vw;
     }
 }

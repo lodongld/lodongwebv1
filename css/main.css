@@ -1,3 +1,16 @@
+
+.navbg{
+    background-color: #B5B5B5 !important;
+}
+.navactive{
+font-weight: bolder;
+}
+.navbar{
+    padding: 1rem 0;
+}
+.nav-item{
+    margin: 0 0.5rem
+}
 :root {
     --clr-primary: #EC0009;
     --clr-unclick: #858585;
@@ -31,47 +44,49 @@
 
 }
 @font-face {
-    font-family: load_jura;
+    font-family: 'load_jura';
     src: url('../fonts/JuraBook.ttf');
 }
 
 @font-face {
-    font-family:load_leferi;
+    font-family:'load_leferi';
     src: url('../fonts/LeferiBaseRegular.otf');
 }
 
 @font-face {
-    font-family:load_apple;
+    font-family:'load_apple';
     src: url('../fonts/AppleSDGothicNeoB.ttf');
 
 }
 
 @font-face {
-    font-family:load_apple_kor;
+    font-family:'load_apple_kor';
     src: url('../fonts/AppleSDGothicNeoL.ttf');
 
 }
 
 @font-face {
-    font-family:notoload;
+    font-family:'notoload';
     src: url('../fonts/NotoSansKR-Medium.otf');
 
 }
 
 @font-face {
-    font-family:notoloadthin;
+    font-family:'notoloadthin';
     src: url('../fonts/NotoSansKR-Thin.otf');
 
 }
 
 
 @font-face {
-    font-family:notoloadnor;
+    font-family:'notoloadnor';
     src: url('../fonts/NotoSansKR-Regular.otf');
-
 }
 
-
+@font-face {
+    font-family:'jackques';
+    src: url('../fonts/JacquesFrancois-Regular.ttf');
+}
 
 *,
 *::before,
@@ -80,8 +95,11 @@
 }
 
 html{
-    scroll-behavior: smooth;
-    font-family: "notoloadnor",Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;    
+    font-family: "load_apple";
+}
+body{
+    font-family: 'load_apple_kor';
 }
 
 body,
@@ -110,12 +128,11 @@ h3 {
 header {
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    visibility: hidden;
     top: 0;
     z-index: 999;
 }
 
-.container_header{
+/* .container_header{
     margin: auto;
     display: flex;
     justify-content: center;
@@ -123,7 +140,7 @@ header {
     visibility: visible;
     background-color: var(--clr-neutral);
     width: 100%;
-}
+} */
 .container {
     margin: auto;
     max-width: 1920px;
@@ -138,15 +155,46 @@ header {
     width: 100%;
     margin: 0px;
 }
+.headerarrow {
+    transform: translateX(-50%);
+    animation: float 3s ease-in-out infinite;
+}
+    
+@keyframes float {
+0% {
+    transform: translate(-50%, 0);
+}
+50% {
+    transform: translate(-50%, -40px);
+}
+100% {
+    transform: translate(-50%, 0);
+}
+}
 
-.logo {
+.bounce {
+animation: bounce 3s ease-in-out;
+}
+
+@keyframes bounce {
+0% {
+    top: 0;
+}
+50% {
+    top: 50px;
+}
+100% {
+    top: 0;
+}
+}
+/* .logo {
     width: 25%;
     min-width: 250px;
     text-align: center;
     margin: auto;
     max-width: 480px;
     background-color: transparent !important;
-}
+} */
 
 .logo a,
 
@@ -154,7 +202,7 @@ header {
     text-decoration: none;
     text-align: center;
     font-size: 38px;
-    font-family: 'Jacques Francois', serif;
+    font-family: 'jackques';
     font-style: normal;
     line-height: 41px;
     font-weight: 1500;
@@ -405,6 +453,10 @@ nav{
     line-height: 14px;
     cursor: pointer;
 }
+.orderbtn:hover{
+    background-color: #D9D9D9;
+    transition: 0.2s ease-in;
+}
 
 /*  CSS for index.html */
 
@@ -468,11 +520,6 @@ nav{
 }
 
 /*  CSS for footer */
-
-.footer-container {
-    max-width: 1920px;
-    margin: auto;
-}
 footer{
     font-family: load_apple,sans-serif;
 }
@@ -605,4 +652,64 @@ hr {
     font-size: 40px !important;
     vertical-align: bottom;
     font-weight: bold;
+}
+
+
+
+@media only screen and (min-width: 1920px) {
+    #top_bar p{
+        font-size:3rem !important;
+    }
+    #top_bar span{
+        font-size:2rem !important;
+    }
+    .navbar{
+        padding: 5rem auto;
+    }
+    .nav-item{
+        margin: 0 0.5rem
+    }
+    .nav-item a{
+        font-size: 2rem;
+    }
+    .orderbtn {
+        padding: 1.5rem 1.5rem;
+        font-size: 2rem;
+    }
+    .logo a, .logo h1 {
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    footer p, footer span{
+        font-size: 1.8rem;
+    }
+    .headerarrow {
+        width: 1.8rem;
+    }
+    .cooperation img{
+        width: 60vw;
+    }
+    .cooperation h5{
+        font-size: 3rem !important;
+    }    
+    .footer-logo{
+        height: 25vh;
+    }
+}
+@media(max-width: 500px) {
+    .navbar{
+        padding:1rem auto !important;
+    }
+    .logo a, .logo h1 {
+        font-size: 1.5rem;
+    }
+    .cooperation img{
+        width: 80vw;
+    }
+    .cooperation h5{
+        font-size: 1rem !important;
+    }
+    .footer-logo{
+        height: 15vh;
+    }
 }
