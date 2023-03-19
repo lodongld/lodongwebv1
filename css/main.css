@@ -158,19 +158,20 @@ header {
 .headerarrow {
     transform: translateX(-50%);
     animation: float 1.5s ease-in-out infinite;
-    margin: 5rem 0 -5rem;
+    margin: 6rem 0 -5rem;
+    margin-left: 1rem;
 }
     
 @keyframes float {
-0% {
-    transform: translate(-50%, 0);
-}
-50% {
-    transform: translate(-50%, -150px);
-}
-100% {
-    transform: translate(-50%, 0);
-}
+    0% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -170px);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
 
 .bounce {
@@ -178,15 +179,15 @@ animation: bounce 3s ease-in-out;
 }
 
 @keyframes bounce {
-0% {
-    top: 0;
-}
-50% {
-    top: 50px;
-}
-100% {
-    top: 0;
-}
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 0;
+    }
 }
 /* .logo {
     width: 25%;
@@ -668,17 +669,17 @@ hr {
         padding: 5rem auto;
     }
     .nav-item{
-        margin: 0 1rem
+        margin: 0 0.2rem
     }
     .nav-item a{
-        font-size: 2.2rem;
+        font-size: 1.5rem;
     }
     .orderbtn {
-        padding: 1.5rem 1.5rem;
-        font-size: 2rem;
+        padding: 1.2rem 1.2rem;
+        font-size: 1.5rem;
     }
     .logo a, .logo h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         letter-spacing: 1px;
     }
     footer p, footer span{
@@ -686,6 +687,7 @@ hr {
     }
     .headerarrow {
         width: 1.8rem;
+        margin-left: 1rem;
     }
     .cooperation img{
         width: 60vw;
@@ -712,5 +714,8 @@ hr {
     }
     .footer-logo{
         height: 15vh;
+    }
+    footer div{
+        text-align: center;
     }
 }

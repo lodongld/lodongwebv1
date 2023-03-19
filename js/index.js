@@ -40,12 +40,25 @@ $(document).ready(function() {
   
         if (scrollTop + windowHeight / 2 > sectionTop && scrollTop + windowHeight / 2 < sectionTop + sectionHeight) {
           const sectionId = $(this).attr('id');
-          $('#'+sectionId).addClass('bounce');
+          //$('#'+sectionId).addClass('bounce');
           //console.log(`Section ${sectionId} is in the center of the screen.`);
         }else{
           const sectionId = $(this).attr('id');
-          $('#'+sectionId).removeClass('bounce');
+          //$('#'+sectionId).removeClass('bounce');
         }
       });
+    });
+
+    $(".main-portfolio").hover(function(){
+      const sectionId = $(this).attr('id');
+      const imageName = $(this).attr('class');
+      
+      if($(this).find('img.leftimg').first().hasClass("leftimg")) {
+        $(this).find('img.leftimg').addClass('arrowredbox');
+      } else {
+        $(this).find('img.rightimg').addClass('arrowredbox2');
+      }
+    }, function() {
+      $(this).find('img').removeClass('arrowredbox arrowredbox2');
     });
   });
