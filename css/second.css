@@ -19,8 +19,6 @@
 @font-face {
     font-family: 'load_apple';
     src: url('../fonts/AppleSDGothicNeoB.ttf');
-
-
 }
 
 @font-face {
@@ -36,7 +34,8 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #F5F5F5;    
+    font-family: "load_apple_kor";
 }
 
 .container_first {
@@ -46,7 +45,6 @@ body {
     display: inline-block;
     margin: auto;
     text-align: left;
-
 }
 
 .text_container {
@@ -430,13 +428,18 @@ body {
     margin-top: 9rem;
 }
 .topbar-mt{
-    margin-top: 14.5rem;
+    margin-top: 11.5rem;
 }
+
 @media screen and (min-width: 1920px) {
     .topbar-mt{
-        margin-top: 27rem;
+        margin-top: 22rem;
+    }
+    .mt-15{
+        margin-top: 15rem;
     }
 }
+
 @media screen and (max-width: 500px) {
     .top_bar{
         padding: 0 2rem;

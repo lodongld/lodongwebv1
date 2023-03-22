@@ -41,7 +41,7 @@
 }
 .arrowred {
 transform: translateX(-50%);
-animation: float 2s ease-in-out infinite;
+animation: float 1.3s ease-in-out infinite;
 margin: 25rem 0 5rem;
 }
 
@@ -488,6 +488,20 @@ transform: translateY(50px);
         top: 7.2rem;
         right:6rem;
         width: 1rem;
+    }
+    .arrowred{
+        margin:10rem 0 5rem;
+    }
+    @keyframes float {
+        0% {
+            transform: translate(-50%, 0);
+        }
+        50% {
+            transform: translate(-50%, -150px);
+        }
+        100% {
+            transform: translate(-50%, 0);
+        }
     }
     @keyframes mymoveleft {
     0% {left: 6rem;}

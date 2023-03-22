@@ -141,7 +141,7 @@ header {
     background-color: var(--clr-neutral);
     width: 100%;
 } */
-.container {
+.container-cust {
     margin: auto;
     max-width: 1920px;
     min-height: 103px;
@@ -525,7 +525,9 @@ nav{
 footer{
     font-family: load_apple,sans-serif;
 }
-
+.footercopr{
+    margin: 0 0 0 3rem;
+}
 .branding {
     align-items: center;
     justify-content: center;
@@ -657,7 +659,10 @@ hr {
 }
 
 
-
+.footer-logo{
+    margin-top: 1rem;
+    height: 20vh;
+}
 @media only screen and (min-width: 1920px) {
     #top_bar p{
         font-size:3rem !important;
@@ -688,15 +693,24 @@ hr {
     .headerarrow {
         width: 1.8rem;
         margin-left: 1rem;
+        height: 15rem;
     }
     .cooperation img{
-        width: 60vw;
+        width: 50vw;
     }
     .cooperation h5{
-        font-size: 3rem !important;
+        font-size: 27px !important;
+        margin:2rem auto 4rem;
     }    
     .footer-logo{
-        height: 25vh;
+        height: 15vh;
+    }
+    .fs-cust{
+        font-size: 8rem;
+        font-family: 'Inter', sans-serif;
+    }
+    .footercopr{
+        margin: 0 0 0 3rem;
     }
 }
 @media(max-width: 500px) {
@@ -717,5 +731,8 @@ hr {
     }
     footer div{
         text-align: center;
+    }
+    .footercopr{
+        margin: 0 auto;
     }
 }

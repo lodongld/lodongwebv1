@@ -5,7 +5,6 @@
     position: relative;
     background-image: url("../resources/first_topbar.svg");
     background-repeat: no-repeat;
-    justify-content: center;
     background-position: bottom;
     background-size: cover;
     background-color: #FFB800;
@@ -434,6 +433,9 @@ body {
 @media screen and (min-width: 1920px) {
     .topbar-mt{
         margin-top: 22rem;
+    }
+    .mt-15{
+        margin-top: 15rem;
     }
 }
 

@@ -1,26 +1,4 @@
-@font-face {
-    font-family: 'leferi';
-    src: url('../fonts/LeferiBaseRegular.otf') format('opentype');
-}
 
-@font-face {
-    font-family: 'load_apple';
-    src: url('../fonts/AppleSDGothicNeoB.ttf');
-
-
-}
-
-@font-face {
-    font-family: 'load_apple_kor';
-    src: url("../fonts/AppleSDGothicNeoL.ttf");
-
-}
-
-@font-face {
-    font-family: 'load_sb';
-    src: url("../fonts/AppleSDGothicNeoSB.ttf");
-
-}
 .top_bar {
     width: 100%;
     height: 85vh;    
@@ -46,10 +24,44 @@
     background-size: cover;
     background-color: #F6EFE0;
 }
+.top_bar_sixth {
+    width: 100%;
+    height: 85vh;    
+    height: 85dvh;
+    position: relative;
+    background-image: url("../resources/lottery/lotterybanner.svg");
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: bottom;
+    background-size: cover;
+    background-color: #2933D1;
+}
+
+@font-face {
+    font-family: 'leferi';
+    src: url('../fonts/LeferiBaseRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'load_apple';
+    src: url('../fonts/AppleSDGothicNeoB.ttf');
+}
+
+@font-face {
+    font-family: 'load_apple_kor';
+    src: url("../fonts/AppleSDGothicNeoL.ttf");
+
+}
+
+@font-face {
+    font-family: 'load_sb';
+    src: url("../fonts/AppleSDGothicNeoSB.ttf");
+
+}
 
 body {
-    background-color: #F5F5F5;
-
+    background-color: #F5F5F5;    
+    font-family: "load_apple_kor";
 }
 
 .container_first {
@@ -59,7 +71,6 @@ body {
     display: inline-block;
     margin: auto;
     text-align: left;
-
 }
 
 .text_container {
@@ -443,25 +454,20 @@ body {
     margin-top: 9rem;
 }
 .topbar-mt{
-    margin-top: 14.5rem;
-}
-.topbar5th-mt{
-    margin-top: 9.5rem;
+    margin-top: 11.5rem;
 }
 
 @media screen and (min-width: 1920px) {
     .topbar-mt{
-        margin-top: 27rem;
+        margin-top: 22rem;
     }
-
-    .topbar5th-mt{
-        margin-top: 27rem;
+    .mt-15{
+        margin-top: 15rem;
     }
-  }
+}
 
-  
 @media screen and (max-width: 500px) {
-    .top_bar, .top_bar_fifth{
+    .top_bar{
         padding: 0 2rem;
     }
     .section-cont img {

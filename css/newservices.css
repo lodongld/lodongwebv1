@@ -1,3 +1,160 @@
-.services{
-    height: 70vh;
+@font-face {
+    font-family:'load_apple';
+    src: url('../fonts/AppleSDGothicNeoB.ttf');
+
+}
+.services, .servicetitle{
+    height: 60vh;
+    transition: 1s ease;
+}
+.servicetitle{
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "load_apple", sans-serif;
+}
+.servicebody{
+    margin-top: 5rem;
+}
+.tag {
+    position: absolute;
+    writing-mode: vertical-rl; /* or vertical-lr */
+    font-size: 1.2rem;
+    color: white;
+    text-align:end;    
+    font-family: "load_apple", sans-serif;
+    height: 50vh;
+    bottom: 5.5rem;
+}
+.tag-desc{
+    margin-top:10%;
+    margin-left:5%;
+}
+.tag-desc label{
+    text-align: justify;
+    font-family: "load_apple", sans-serif;
+    padding: 0.5rem;
+}
+.tagnum{
+    height:fit-content;
+    margin-top: -3.1rem;
+    padding: 0 !important;
+    font-size: 8.7rem;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+}
+#service1{
+    background-image: url("../resources/services/develop1.png");
+    background-size:cover;
+    background-position:left left;
+    background-repeat: no-repeat;
+}
+#service2{
+    background-image: url("../resources/services/develop2.png");
+    background-size:cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+#service3{
+    background-image: url("../resources/services/develop3.png");
+    background-size:cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+#service4{
+    background-image: url("../resources/services/develop4.png");
+    background-size:cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+#service5{
+    background-image: url("../resources/services/develop5.png");
+    background-size:cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+#service6{
+    background-image: url("../resources/services/develop6.png");
+    background-size:cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}#service7{
+    background-image: url("../resources/services/develop7.png");
+    background-size:cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+#service8{
+    background-image: url("../resources/services/develop8.png");
+    background-size:cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1920px) {
+    .services, .servicetitle{
+        height: 50vh;
+    }
+    .servicebody{
+        margin-top: 10rem;
+    }
+    .servicetitle{
+        font-size: 4rem;
+    }
+    .tag {
+        font-size: 1.8rem;
+        height: 50vh;
+        bottom: 15.5rem;
+    }
+    .tag-desc{
+        margin-top:10%;
+        margin-left:5%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* *{
+        border:solid 1px;
+        color:red;
+    } */
+    .services, .servicetitle{
+        height: 10vh;
+    }
+    .servicetitle{
+        justify-content: center;
+    }
+    .servicetitle p{
+        text-align: center;
+        display: inline-block;
+        font-size: 2rem;
+    }
+    .tag {
+        font-size: 1rem;
+        color: white;
+        font-weight: bold; 
+        writing-mode:unset;
+        position: relative;
+        width: 80%;
+        top:2rem;
+        text-align: right;
+        height: 2rem;
+    }
+    .tagnum{
+        font-size: 5rem;
+        margin-top: -1rem;
+        display: inline-block;
+        position: relative;
+    }
+    .servicebody{
+        margin-top: 0 !important;
+    }
+    .tag-desc{
+        margin-top:10%;
+        margin-left:5%;
+    }
+    .mobile-expand{
+        height: 50vh;
+    }    
+    
+    /* section{
+        display: none;
+    } */
 }
