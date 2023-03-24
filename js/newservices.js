@@ -9,7 +9,7 @@ $(".services").hover(function(){
 
     $(this).find('.tag').removeClass('d-bock').hide();
     $(this).find('.tag-desc').removeClass('d-none').hide();
-    $(this).find('.tag-desc').delay('800').fadeIn();
+    $(this).find('.tag-desc').delay('350').fadeIn('slow');
 
   }, function() {
     $(this).removeClass('col-xxl-4');

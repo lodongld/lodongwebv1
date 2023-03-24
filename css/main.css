@@ -713,7 +713,7 @@ hr {
         margin: 0 0 0 3rem;
     }
 }
-@media(max-width: 500px) {
+@media(max-width: 412px) {
     .navbar{
         padding:1rem auto !important;
     }
@@ -736,3 +736,4 @@ hr {
         margin: 0 auto;
     }
 }
+
