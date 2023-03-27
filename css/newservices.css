@@ -20,18 +20,18 @@
     writing-mode: vertical-rl; /* or vertical-lr */
     font-size: 1.2rem;
     color: white;
-    text-align:end;    
+    text-align:start;    
     font-family: "load_apple", sans-serif;
     height: 50vh;
-    bottom: 5.5rem;
+    top: 5.5rem;
 }
 .tag-desc{
     /* transition: 1s ease; */
     margin-top:10%;
-    margin-left:5%;
+    width: 85vw;
 }
 .tag-desc label{
-    text-align: justify;
+    /* text-align: justify; */
     font-family: "load_apple", sans-serif;
     padding: 0.5rem;
 }
@@ -101,17 +101,19 @@
     }
 } */
 
-@media only screen and (min-width: 2560px){
-    .services, .servicetitle{
-        height: 60vh !important;
-    }
-}
-@media only screen and (min-width: 1920px) and (min-height: 1200px) {
+@media only screen and (max-width: 2560px){
     .tag {
-        bottom: 18.5rem !important;
+        top: 44.5rem;
+        height: 30vh;
+        font-size:2.5rem;
     }
 }
-@media only screen and (min-width: 1920px){
+@media only screen and (max-width: 1920px) and (max-height: 1200px) {
+    .tag {
+        top: 39.5rem;
+    }
+}
+@media only screen and (max-width: 1920px){
     .services, .servicetitle{
         height: 50vh;
     }
@@ -124,23 +126,57 @@
     .tag {
         font-size: 1.8rem;
         height: 50vh;
-        bottom: 15.5rem;
+        top: 35.5rem;
     }
     .tag-desc{
         margin-top:10%;
-        margin-left:5%;
+    }
+
+}
+@media only screen and (max-width: 1600px){
+    .tag{
+        font-size: 1.8rem;
+        height: 40vh;
+        bottom: 8.5rem;
+    }
+    .tagnum{
+        font-size: 8rem;
+        margin-left: -1rem;
     }
 }
-/* @media only screen and (min-width: 1366px) and (min-height: 768px) {
+@media only screen and (max-width: 1366px){
+    .services, .servicetitle{
+        height: 60vh;
+    }
+    .servicebody{
+        margin-top: 5rem;
+    }
     .tag{
-        bottom: 5.5rem !important;
+        font-size: 1.8rem;
+        height: 40vh;
+        top: 22.5rem;
+    }
+    .tagnum{
+        font-size: 8rem;
+        margin-left: 0rem;
+    }
+    .servicetitle{
+        font-size: 3rem;
     }
 }
-@media only screen and (min-width: 1280px) and (min-height: 1024px) {
-    .tag{
-        bottom: 5rem;
+@media only screen and (max-width: 1280px){
+    .services, .servicetitle{
+        height: 50vh;
     }
-} */
+    .servicebody{
+        margin-top: 8rem;
+    }
+    .tag{
+        font-size: 1.8rem;
+        height: 27vh;
+        top: 28.5rem;
+    }
+}
 @media only screen and (max-width: 500px) {
     /* *{
         border:solid 1px;
